@@ -15,4 +15,4 @@ RUN apt-get install -y chromedriver google-chrome-stable
 
 WORKDIR /tmp/
 
-ENTRYPOINT ["selenium-side-runner", "test.side"]
+ENTRYPOINT ["selenium-side-runner", "*.side"]
