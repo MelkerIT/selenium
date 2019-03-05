@@ -15,4 +15,4 @@ RUN apt-get install -y chromedriver google-chrome-stable
 
 WORKDIR /tmp/
 
-ENTRYPOINT /bin/bash
+ENTRYPOINT ["selenium-side-runner", "/tmp/data/*.side"]
